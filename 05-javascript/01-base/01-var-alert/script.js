@@ -9,7 +9,11 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+let intro = "Hello, World !"; /* Create the variable */
+
+
 (function() {
-    // your code here
+
+    alert (intro);
 
 })();
