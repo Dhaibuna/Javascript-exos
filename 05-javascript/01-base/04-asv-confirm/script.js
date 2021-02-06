@@ -9,8 +9,30 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+
+    const userAge = prompt ("What's your age ?");
+    const userGender = prompt ("What's your gender ?");
+    const userTwown = prompt ("Where do you live?");
+
 (function() {
 
-    // your code here
+    const confirmUserData = confirm ("You are " + userAge + " years old " + "and you are a " + userGender + "." +
+    " \rYour hometown is Liege" + ". " +
+    "\r" +
+    " \rAre those informations about you correct ?");
+
+if(confirmUserData === true){
+    alert("Welcome!");
+}else{
+    const userAge = prompt ("What's your age ?");
+    const userGender = prompt ("What's your gender ?");
+    const userTwown = prompt ("Where do you live?");
+    
+    const confirmUserData = confirm ("You are " + userAge + " years old " + "and you are a " + userGender + "." +
+    " \rYour hometown is Liege" + ". " +
+    "\r" +
+    " \rAre those informations about you correct ?");
+}
+
 
 })();
