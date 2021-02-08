@@ -42,5 +42,3 @@
         ),
     );
 })();
-
-// This code might no work on Chrome navigator 
