@@ -15,21 +15,21 @@
 
     let operandOne = parseInt(document.getElementById("op-one").value);
     let operandTwo = parseInt(document.getElementById("op-two").value);
-    let result;
+   
     const performOperation = operation => {
         // perform the operation
     switch(operation){
     case 'addition': 
-    alert(result = operandOne + operandTwo);
+    alert(operandOne + operandTwo);
     break; 
     case 'substraction': 
-    alert(result = operandOne - operandTwo);
+    alert(operandOne - operandTwo);
     break; 
     case 'multiplication': 
-    alert(result = operandOne * operandTwo);
+    alert(operandOne * operandTwo);
     break; 
     case 'division': 
-    alert(result = operandOne / operandTwo );
+    alert(operandOne / operandTwo );
     break;
 }
     };
