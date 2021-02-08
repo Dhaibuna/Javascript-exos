@@ -13,10 +13,11 @@
 (() => {
     // to get the value of an input: document.getElementById("element-id").value
 
-    let operandOne = parseInt(document.getElementById("op-one").value);
-    let operandTwo = parseInt(document.getElementById("op-two").value);
-   
+
     const performOperation = operation => {
+
+        let operandOne = parseInt(document.getElementById("op-one").value);
+        let operandTwo = parseInt(document.getElementById("op-two").value);
         // perform the operation
     switch(operation){
     case 'addition': 
