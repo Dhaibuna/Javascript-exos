@@ -16,11 +16,15 @@
         // your code here
 
 
-for ( x = 1 ; x <= 21; x++) 
+for ( x = 2 ; x <= 21; x += 2) 
 {
-  alert(x*x);
+  console.log(x*x);
 }
 
 });
 
 })();
+
+// Correction 
+
+// Il y a également une possibilité avec Modulo 

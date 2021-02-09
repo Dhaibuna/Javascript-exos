@@ -16,29 +16,35 @@
 
     const performOperation = operation => {
 
-        let operandOne = parseInt(document.getElementById("op-one").value);
-        let operandTwo = parseInt(document.getElementById("op-two").value);
+        let operandOne = parseFloat(document.getElementById("op-one").value);
+        let operandTwo = parseFloat(document.getElementById("op-two").value);
         // perform the operation
-    switch(operation){
-    case 'addition': 
-    alert(operandOne + operandTwo);
-    break; 
-    case 'substraction': 
-    alert(operandOne - operandTwo);
-    break; 
-    case 'multiplication': 
-    alert(operandOne * operandTwo);
-    break; 
-    case 'division': 
-    alert(operandOne / operandTwo );
-    break;
-}
+        switch (operation) {
+            case 'addition':
+                alert(operandOne + operandTwo);
+                break;
+            case 'substraction':
+                alert(operandOne - operandTwo);
+                break;
+            case 'multiplication':
+                alert(operandOne * operandTwo);
+                break;
+            case 'division':
+                alert(operandOne / operandTwo);
+                break;
+        }
     };
 
     Array.from(document.querySelectorAll("button.operator")).forEach($btn =>
         $btn.addEventListener(
             "click",
-            () => (performOperation($btn.id), false),
+            () => (performOperation($btn.id), false), 
         ),
     );
 })();
+
+// Correction 
+
+// Selectionne dans les DOM tous les boutons pour en faire un array. Dans l'array on fait un FOREACH : 
+// Sur chaque bouton, crée l'event click et on appelle la fonction " performOperation " 
+// avec son argument qui là est "Opération" pour aller chercher la valeur de l'id du bouton

@@ -17,8 +17,8 @@
 
     document.getElementById("addition").addEventListener("click", function() {
 
-        let operandOne = parseInt(document.getElementById("op-one").value);
-        let operandTwo = parseInt(document.getElementById("op-two").value);
+        let operandOne = parseFloat(document.getElementById("op-one").value);
+        let operandTwo = parseFloat(document.getElementById("op-two").value);
 
         alert(operandOne + operandTwo);
 
@@ -27,8 +27,8 @@
     document.getElementById("substraction").addEventListener("click", function() {
 
 
-        let operandOne = parseInt(document.getElementById("op-one").value);
-        let operandTwo = parseInt(document.getElementById("op-two").value);
+        let operandOne = parseFloat(document.getElementById("op-one").value);
+        let operandTwo = parseFloat(document.getElementById("op-two").value);
 
         alert(operandOne - operandTwo);
 
@@ -38,8 +38,8 @@
     document.getElementById("multiplication").addEventListener("click", function() {
 
 
-        let operandOne = parseInt(document.getElementById("op-one").value);
-        let operandTwo = parseInt(document.getElementById("op-two").value);
+        let operandOne = parseFloat(document.getElementById("op-one").value);
+        let operandTwo = parseFloat(document.getElementById("op-two").value);
 
         alert(operandOne * operandTwo);
 
@@ -48,11 +48,19 @@
 
     document.getElementById("division").addEventListener("click", function() {
 
-        let operandOne = parseInt(document.getElementById("op-one").value);
-        let operandTwo = parseInt(document.getElementById("op-two").value);
+        let operandOne = parseFloat(document.getElementById("op-one").value);
+        let operandTwo = parseFloat(document.getElementById("op-two").value);
 
         alert(operandOne / operandTwo);
 
         // perform an division
     });
 })();
+
+
+// Correction : 
+
+// J'aurais pu déclarer les variables au dessus et puis aller chercher les values.
+// Click = fonction donc ca lit seulement ce qui a dans le SCOPE de la fonction 
+// Mais ca ne reload pas la page. 
+

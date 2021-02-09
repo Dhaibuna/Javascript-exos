@@ -14,3 +14,9 @@
     // your code here
 
 })();
+
+
+// Correction (notes) : 
+
+// Utiliser boucle for car il y a plusieurs condiions donc if ...elseif. 
+// On peut faire avec un Switch 
