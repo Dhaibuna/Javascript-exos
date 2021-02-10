@@ -16,3 +16,17 @@
     // your code here
 
 })();
+
+
+/*
+
+Qu'est-ce que j'ai ? 
+
+- l'ID du contenu du tag <p id=target>  qu'il faut changer. 
+
+De quoi ai-je besoin ? 
+
+D'une méthode allant chercher l'heure qu'il est. 
+D'une condition indiquant qu'apd d'une telle heure, il faut changer le message. 
+
+*/

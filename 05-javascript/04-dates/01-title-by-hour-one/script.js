@@ -35,8 +35,6 @@ Qu'est-ce que j'ai ?
 
 - l'ID du contenu du tag <p id=target>  qu'il faut changer. 
 
-- l'ID run pour ma fonction qui va contenir mon écoute.
-
 De quoi ai-je besoin ? 
 
 D'une méthode allant chercher l'heure qu'il est. 
