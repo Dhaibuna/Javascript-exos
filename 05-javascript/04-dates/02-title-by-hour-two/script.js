@@ -9,12 +9,25 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+let dayTime = new Date();
+//console.log(dayTime); Affiche l'heure dans la console.  
+
+let eveningTime = new Date();
+eveningTime.setHours(17.30); 
+
 (function() {
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
     // your code here
 
+    if(dayTime < eveningTime){
+        document.getElementById("target").innerHTML = "Hello"
+        }
+        else{
+        document.getElementById("target").innerHTML = "Good Evening"
+        }
+    
 })();
 
 
