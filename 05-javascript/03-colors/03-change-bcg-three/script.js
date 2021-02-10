@@ -13,4 +13,24 @@
 
     // your code here
 
+    document.getElementById("run").addEventListener("click", function(){
+    let randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.backgroundColor = randomColor;
+    });
+
 })();
+
+
+/*
+
+1. Qu'est ce que j'ai ? 
+
+- Id que je dois aller chercher. 
+
+2. De quoi j'ai besoin ? 
+
+- Une fonction d'écoute 
+- Une méthode random 
+- Une méthode pour afficher la fonction
+
+ */
