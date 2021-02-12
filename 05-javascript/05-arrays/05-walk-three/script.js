@@ -41,4 +41,21 @@
 
     // your code here
 
+
+
 })();
+
+
+/* 
+
+1. Qu'est ce que j'ai ? 
+
+- Un tableau avec plusieurs objets définis
+- Un ID Run 
+
+2. De quoi j'ai besoin ? 
+
+- D'une d'une écoute sur le bouton
+- D'une boucle For Each qui passe sur chaque objet et qui sélection le nom de la personne
+
+*/

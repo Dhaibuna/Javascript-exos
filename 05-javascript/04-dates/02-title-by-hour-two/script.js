@@ -13,7 +13,7 @@ let dayTime = new Date();
 //console.log(dayTime); Affiche l'heure dans la console.  
 
 let eveningTime = new Date();
-eveningTime.setHours(17.30); 
+eveningTime.setHours(17,30); // (point) || virgule = même chose 
 
 (function() {
 
