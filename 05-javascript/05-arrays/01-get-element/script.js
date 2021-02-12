@@ -26,6 +26,11 @@
         "cherry",
     ];
 
+    document.getElementById("run").addEventListener("click", function(){
+        document.write(fruits[3]); // Tomatos
+
+    });
+
     // your code here
 
 })();
