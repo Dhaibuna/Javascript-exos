@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     var fruits = [
         "pomme",
@@ -24,6 +24,15 @@
         "cerise",
     ];
 
+    // console.log(fruits.length); || Obtenir la longueur du tableau pour le dernier élément || Retourne 10 
+
     // your code here
 
+    document.getElementById("run").addEventListener("click", function () {
+        fruits[0] = "banana";
+        fruits[10] = "kiwi";
+
+        document.write(fruits);
+
+    });
 })();
