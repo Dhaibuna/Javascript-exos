@@ -11,6 +11,25 @@
 
 (function() {
 
-    // your code here
+// your code here
+
+
 
 })();
+
+
+
+/*
+
+1. Qu'est-ce que j'ai ? 
+
+- ID run pour l'écoute
+- ID year pour l'input
+
+2. De quoi j'ai besoin ? 
+
+- D'une écoute sur le bouton "run"
+- Une boucle For Each pour vérifier toutes les années
+- Une boucle For Each pour vérifier tous les vendredi de l'année 
+
+*/ 
