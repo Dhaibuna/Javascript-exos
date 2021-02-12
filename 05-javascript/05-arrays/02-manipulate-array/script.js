@@ -30,7 +30,7 @@
 
     document.getElementById("run").addEventListener("click", function () {
         fruits[0] = "banana";
-        fruits[10] = "kiwi";
+        fruits[9] = "kiwi";
 
         document.write(fruits);
 
