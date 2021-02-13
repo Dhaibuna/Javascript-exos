@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     const people = [
         {
@@ -89,6 +89,37 @@
         },
     ];
 
+
     // your code here
+    document.getElementById("run").addEventListener("click", function () {
+
+        let findFirstName = people.find(item => item.firstname === "Jean");
+        console.log(findFirstName.email);
+
+        let findIndex = people.findIndex(item => item.firstname === "Jean");
+        console.log(findIndex);
+    });
+
 
 })();
+
+
+
+/*
+
+1. Qu'est-ce que j'ai ?
+
+- Un array avec des objets
+- Un ID run
+
+2. De quoi ai-je besoin ?
+
+- Une écoute sur mon bouton
+-  Une méthode pour trouver l'individu qu'il me faut. Syntaxe :
+arr.find(callback(element[, index[, tableau]])[, thisArg])
+
+3. Comment ?
+
+Au click sur le bouton, je veux que la méthode find trouve l'objet contenant monsieur Dupont et m'affiche son adresse.
+Ensuite je veux une autre méthode qui va m afficher le l'index de monsieur Dupont dans le tableau.
+*/
