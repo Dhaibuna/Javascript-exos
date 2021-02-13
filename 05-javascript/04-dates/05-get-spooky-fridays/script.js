@@ -33,7 +33,7 @@
                 spookyDays++;
             };
         }
-console.log(spookyDays);
+console.log(spookyDays); // Problème, affiche 0 pour toutes les dates 
     });
 
 
