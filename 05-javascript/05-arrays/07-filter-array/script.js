@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     const people = [
         {
@@ -90,5 +90,27 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", function () {
+
+        let moreThanEighteen = people.filter(item => item.age > 18);
+        console.log(moreThanEighteen);
+
+    });
 
 })();
+
+
+
+/*
+
+1. Qu'est-ce que j'ai ?
+
+- Un tableau avec des objets
+-Un id Run
+
+2. De quoi j'ai besoin
+
+- Une écoute sur le bouton run
+- Une méthode pour filtrer les objets du tableau en fonction de la valeur de la clé age.
+
+*/
