@@ -51,7 +51,7 @@
     //console.log(birdsNamesFem);  Ne sert a rien 
     const birdsAdjectives = Array.from(adjectives); // Avec Array.from, je crée un tableau apd de mon set 
     //console.log(birdsAdjectives); 
-    
+
     document.getElementById("run").addEventListener("click", function () {
         const randomBird = Math.floor(Math.random() * birdsNamesGrabbing.length);
         //console.log(birdsNamesGrabbing [randomBird]);
@@ -67,7 +67,6 @@
     });
 })();
 
-// Ne prends pas en compte la condition ....et donc n'accorde pas l'adj
 
 
 
