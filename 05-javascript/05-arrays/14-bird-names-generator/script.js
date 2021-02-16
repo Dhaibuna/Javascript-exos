@@ -48,19 +48,16 @@
     // const birdsNamesFem = birds.map(function (birds) {
     //     return birds.fem;
     // });
-    //console.log(birdsNamesFem);
-
+    //console.log(birdsNamesFem);  Ne sert a rien 
     const birdsAdjectives = Array.from(adjectives); // Avec Array.from, je crée un tableau apd de mon set 
     //console.log(birdsAdjectives); 
-
-
+    
     document.getElementById("run").addEventListener("click", function () {
         const randomBird = Math.floor(Math.random() * birdsNamesGrabbing.length);
         //console.log(birdsNamesGrabbing [randomBird]);
         const randombirdsAdjectives = Math.floor(Math.random() * birdsAdjectives.length);
         //console.log( birdsAdjectives[randombirdsAdjectives]);
-        if (birds.fem == true) {
-            console.log("salut");
+        if (birds[randomBird].fem == true) {
             document.getElementById("target").innerHTML = `${birdsNamesGrabbing[randomBird]} ${birdsAdjectives[randombirdsAdjectives]}e`;
         } else {
             document.getElementById("target").innerHTML = `${birdsNamesGrabbing[randomBird]} ${birdsAdjectives[randombirdsAdjectives]}`;
