@@ -19,4 +19,7 @@
         status: "married",
     };
     // your code here
+
+    console.log(`${Object.keys(person)} ${Object.values(person)}`); // Keys et puis les values associées aux keys. 
+
 })();
