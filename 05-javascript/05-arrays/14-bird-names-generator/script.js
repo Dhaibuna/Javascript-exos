@@ -45,9 +45,9 @@
     });
     //console.log(birdsNamesGrabbing);
 
-    const birdsNamesFem = birds.map(function (birds) {
-        return birds.fem;
-    });
+    // const birdsNamesFem = birds.map(function (birds) {
+    //     return birds.fem;
+    // });
     //console.log(birdsNamesFem);
 
     const birdsAdjectives = Array.from(adjectives); // Avec Array.from, je crée un tableau apd de mon set 
@@ -60,10 +60,13 @@
         const randombirdsAdjectives = Math.floor(Math.random() * birdsAdjectives.length);
         //console.log( birdsAdjectives[randombirdsAdjectives]);
         if (birds.fem == true) {
+            console.log("salut");
             document.getElementById("target").innerHTML = `${birdsNamesGrabbing[randomBird]} ${birdsAdjectives[randombirdsAdjectives]}e`;
         } else {
             document.getElementById("target").innerHTML = `${birdsNamesGrabbing[randomBird]} ${birdsAdjectives[randombirdsAdjectives]}`;
+
         };
+
     });
 })();
 
