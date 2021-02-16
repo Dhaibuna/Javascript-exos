@@ -11,4 +11,13 @@
 
 (() => {
     // your code here
+    const natascha = {
+        lastName: "Natascha",
+        firstName: "Gritte",
+        age: 28,
+        city: "Liège",
+        country: "Belgium",
+    }
+
+    console.log(natascha);
 })();
