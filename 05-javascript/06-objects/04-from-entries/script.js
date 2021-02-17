@@ -13,4 +13,12 @@
     const keys = ["name", "species", "age", "gender", "color"];
     const values = ["Skitty", "cat", 9, "female", "tabby"];
     // your code here
+
+    document.getElementById("run").addEventListener("click", () => {
+
+        let newObjectFromEntries = Object.fromEntries(keys.map((_, x) => [keys[x], values[x]]))
+        /* Underscore, pour indiquer que le paramètre est ignoré. */
+        console.log(newObjectFromEntries); 
+    });
+
 })();
