@@ -12,7 +12,6 @@
 (function () {
 
     // your code here
-    document.getElementById("run").addEventListener("click", () => {
-        document.getElementById("target").innerHTML = "I just did it"
-    });
+
+    document.getElementById("target").innerHTML = "I just did it"
 })();

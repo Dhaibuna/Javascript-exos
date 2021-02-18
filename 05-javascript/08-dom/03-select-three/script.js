@@ -13,7 +13,6 @@
 
     // your code here
 
-    document.getElementById("run").addEventListener("click", () => {
-        document.querySelectorAll(".target").innerHTML = "owned";
-    });
+
+    document.querySelectorAll(".target").innerHTML = "owned";
 })();

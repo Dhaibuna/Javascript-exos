@@ -12,9 +12,7 @@
 (function () {
 
     // your code here
-    document.getElementById("run").addEventListener("click", () => {
-        document.querySelector("#target").innerHTML = "Tricky one";
-    });
 
+    document.querySelector("#target").innerHTML = "Tricky one";
 
 })();
