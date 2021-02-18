@@ -9,9 +9,10 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     // your code here
-    document.getElementById("target").innerHTML = "I just did it"
-
+    document.getElementById("run").addEventListener("click", () => {
+        document.getElementById("target").innerHTML = "I just did it"
+    });
 })();
