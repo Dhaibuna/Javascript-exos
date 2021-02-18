@@ -14,5 +14,6 @@
     // your code here
 
 
-    document.querySelectorAll(".target").innerHTML = "owned";
+    document.querySelectorAll(".target").forEach(x => x.innerHTML = "owned");
+
 })();
