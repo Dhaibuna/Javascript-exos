@@ -26,10 +26,8 @@
 
     document.getElementById("next").addEventListener("click", () => {
         getImgDom.setAttribute("src", gallery[index]);
-        
-        if (gallery.length > index) {
-            index++;  // index = index+1
-        }else{
+        index++; // index = index+1
+        if (gallery.length <= index) {
             index=0;
         }
     });
