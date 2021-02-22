@@ -22,6 +22,7 @@
     //console.log(newImg);
     document.getElementById("target").appendChild(newImg);
     //Remove attribute 
-    document.getElementById("source").removeAttribute("data-image");
+    document.getElementById("source").remove(); // Pas besoin de spécifier le remove dans attribute
 
 })();
+
