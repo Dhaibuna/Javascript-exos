@@ -19,14 +19,19 @@
   const arrayOfTenRandomNumbers = []; // crée un tableau vide
 
 
-  document.getElementById("run").addEventListener("click", function () {
+  document.getElementById("run").addEventListener("click",  () => {
 
-    for (var x = 0; x < 10; x++) {
-      let randomNumber = Math.floor(Math.random() * 100) + 1;
-      document.getElementById("n-" + (x + 1)).innerHTML = randomNumber; // Je demande que chacun des nombres pick pour la longueur du tableau soit aléatoire. 
-      arrayOfTenRandomNumbers.push(randomNumber); // Je push mes random dans ma variable
+    for (let x = 0; x < 10; x++) {
+      arrayOfTenRandomNumbers.push(Math.floor(Math.random() * 100) + 1);
+      // Je demande que chacun des nombres pick pour la longueur du tableau (condition) 
+      //soit aléatoire et soit pushed dans mon tableau vide
     }
-    let min = Math.min(...arrayOfTenRandomNumbers);
+    arrayOfTenRandomNumbers.forEach((randomNumber, x) => {
+      document.getElementById("n-"+(x+1)).innerHTML = randomNumber;
+     // Pour chaque élément  x de mon tableau ArrayOfTenRandomNumbers, ajouter un random number. 
+    });
+
+    let min =  Math.min(...arrayOfTenRandomNumbers);
     document.getElementById("min").innerHTML = min;
     // Je vais rechercher le plus petit nombre ---> Mais ca foire 
     let max = Math.max(...arrayOfTenRandomNumbers);
@@ -40,8 +45,6 @@
     // Je vais rechercher la moyenne 
 
   });
-
-
 
 
 })();

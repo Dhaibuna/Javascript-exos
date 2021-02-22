@@ -41,3 +41,8 @@
     });
 
 })();
+
+
+// CORRECTIONS 
+
+// Static = Signifie qu'on peut l'appeler en dehors de la classe. 
