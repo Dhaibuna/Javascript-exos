@@ -12,12 +12,22 @@
 (function () {
 
     // your code here
-    document.querySelector("img").addEventListener("mouseover", () => {
-        let hover = document.querySelector("img");
-        hover.setAttribute('src', 'data-hover');
-    })
+
+    // Je vais rechercher Img
+    let img = document.querySelector("img");
+
+    // Je vais chercher les attributs correspondants à mes deux actions : 
+    let notHoveredImg = img.getAttribute("src");
+    let HoveredImg = img.getAttribute("data-hover");
+
+    img.addEventListener("mouseover", () => {
+        img.src = HoveredImg;
+    }); // L'élément de départ est l'image de départ, sans avoir été hovered. Une fois la souris passée sur l'élément, l'iamge hovers apparait
+    
+    img.addEventListener("mouseout", () => {
+        img.src = notHoveredImg // L'élément de départ revient une fois que le curseur de la souris quitte l'élément. 
+    });
 
 })();
 
 
-// L'image ne se display pas ... quel malheur... :(
