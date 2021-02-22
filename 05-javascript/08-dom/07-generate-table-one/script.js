@@ -14,7 +14,27 @@
     // your code here
     //Je prends l'ID target 
     let getElement = document.getElementById("target");
-    // Je crée les éléments de la table HTML
-    let table = document.createElement("table")
+    // Je crée le squelette de la table HTML
+    let table = document.createElement("table");
+    // J'ajoute ma table à mon élément target 
+
+
+    getElement.appendChild(table);
+
+    for (let x = 0; x < 10; x++) {
+        // Je crée mes colonnes 
+
+        let tableRow = document.createElement("tr");
+        // Je l'ajoute a ma table
+        table.appendChild(tableRow);
+        // let textRow = document.createTextNode("Ceci n'est pas un titre de colonne");
+        // tableRow.appendChild(textRow);
+        // Je crée mes Td 
+        let tableData = document.createElement("td");
+        tableRow.appendChild(tableData);
+        // Je crée le textnode
+        let textCell = document.createTextNode("Ceci n'est pas une cellule");
+        tableData.appendChild(textCell);
+    };
 
 })();
