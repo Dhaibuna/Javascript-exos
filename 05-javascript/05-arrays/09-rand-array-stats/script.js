@@ -9,31 +9,37 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-const arrayOfTenRandomNumbers = []; //crée un tableau vide de longueur 
-const random = Math.floor(Math.random() * 100) + 1;
+
 
 
 
 (function () {
 
-    // your code here
-    function mathRandom(min, max)
-    {
-     return Math.floor(Math.random() * (max - min + 1)) + min;
+  // your code here
+  const arrayOfTenRandomNumbers = []; // crée un tableau vide
+
+
+  document.getElementById("run").addEventListener("click", function () {
+
+    for (var x = 0; x < 10; x++) {
+      let randomNumber = Math.floor(Math.random() * 100) + 1;
+      document.getElementById("n-" + (x + 1)).innerHTML = randomNumber; // Je demande que chacun des nombres pick pour la longueur du tableau soit aléatoire. 
+      arrayOfTenRandomNumbers.push(randomNumber); // Je push mes random dans ma variable
     }
+    let min = Math.min(...arrayOfTenRandomNumbers);
+    document.getElementById("min").innerHTML = min;
+    // Je vais rechercher le plus petit nombre ---> Mais ca foire 
+    let max = Math.max(...arrayOfTenRandomNumbers);
+    document.getElementById("max").innerHTML = max;
+    // Je vais rechercher le plus grand nombre 
+    let sum = arrayOfTenRandomNumbers.reduce((a, b) => { return a + b; });
+    document.getElementById("sum").innerHTML = sum;
+    // Je vais additionner la somme de tous mes nombres
+    let average = sum / arrayOfTenRandomNumbers.length;
+    document.getElementById("average").innerHTML = average;
+    // Je vais rechercher la moyenne 
 
-    var randomNumbers = mathRandom(1, 100);
-    document.getElementById("run").addEventListener("click", function () {
-
-        let x;
-        for (x=0; x<10; x++){
-            arrayOfTenRandomNumbers[x] = randomNumbers;
-            document.getElementById('n-'+(x+1)).innerHTML= arrayOfTenRandomNumbers[x];
-        }
-        
-    
-
-    });
+  });
 
 
 
@@ -55,4 +61,5 @@ const random = Math.floor(Math.random() * 100) + 1;
 - D'une génération de nombres avec Math.random
 - D'une boucle for  dans l'array, implémenter un random number
 - Méthode pour afficher les définitions Math.min & math max etc ?
+
 */
