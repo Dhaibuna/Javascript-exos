@@ -11,4 +11,9 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", () =>{
+        window.lib.getPersons((err, people)=>{
+            console.log(err, people);
+        });
+    });
 })();
