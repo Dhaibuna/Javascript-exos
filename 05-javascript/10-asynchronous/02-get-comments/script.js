@@ -11,4 +11,36 @@
 
 (() => {
     // your code here
+
+    document.getElementById("run").addEventListener("click", () => {
+        window.lib.getPosts((err, article) => {
+
+            array.forEach(article => {
+                window.lib.getComments((id, err) => {
+
+                });
+            });
+
+
+        });
+    });
 })();
+
+
+/*
+1. Qu'est ce qu'il me faut comme résulat ?
+
+Pour CHAQUE article, je dois aller chercher SES commentaires.
+
+2. Qu'est-ce que j'ai ?
+
+Une fonction getPosts et une fonction getComments, que je dois appeler dans la fonction getPosts.
+
+3. De quoi j'ai besoin pour avancer ?
+
+- FOREACH sur les articles.
+- Lancer la fonction getComments.
+- console log de mes functions
+
+
+*/
