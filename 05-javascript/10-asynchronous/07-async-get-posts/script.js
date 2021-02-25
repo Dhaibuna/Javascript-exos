@@ -11,4 +11,13 @@
 
 (() => {
     // your code here
+   async function promise() {  // Je déclare ma fonction en asynchrone
+        let prom = await window.lib.getPosts(); // Attends que ma promesse asynchrone se réalise pour retourner la variable 
+        console.log(prom);
+    };
+
+    document.getElementById("run").addEventListener("click", () => {
+        promise(); // J'appelle ma fonction
+    });
+
 })();
