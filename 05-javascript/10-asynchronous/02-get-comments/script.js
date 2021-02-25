@@ -13,15 +13,12 @@
     // your code here
 
     document.getElementById("run").addEventListener("click", () => {
-        window.lib.getPosts((err, article) => {
-
-            array.forEach(article => {
-                window.lib.getComments((id, err) => {
-
-                });
+        window.lib.getPosts((err, articles) => {
+            articles.forEach(comment => {
+                window.lib.getComments(comment.id,((err, comments)=>{
+                    console.log(comments)
+                }));
             });
-
-
         });
     });
 })();
