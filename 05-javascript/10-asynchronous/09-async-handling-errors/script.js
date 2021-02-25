@@ -11,4 +11,16 @@
 
 (() => {
     // your code here
+    async function promise() {  // Je déclare ma fonction en asynchrone
+        let awaitPersons = await window.lib.getPersons(); // Attends que ma promesse asynchrone se réalise pour retourner la variable 
+        console.log(awaitPersons);
+    };
+
+    document.getElementById("run").addEventListener("click", () => {
+        try {
+            promise(); // J'appelle ma fonction dans le try
+        } catch (error) {
+           console.error(); // Sinon j'affiche le message d'erreur qui est "Bad luck"
+        }
+    });
 })();
