@@ -11,4 +11,14 @@
 
 (() => {
     // your code here
-})();
+    let promises = [window.lib.getPosts(articles), window.lib.getComments(comments)]; 
+    /* I create an array so I can use promise.all() method further */ 
+
+    document.getElementById("run").addEventListener("click", () => {
+        Promise.all(promises)
+        .then(() => {
+            console.log();
+        });
+});
+
+}) ();

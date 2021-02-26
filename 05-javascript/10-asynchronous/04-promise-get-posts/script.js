@@ -12,12 +12,7 @@
 (() => {
     // your code here
     document.getElementById("run").addEventListener("click", () =>{
-        window.lib.getPosts()
-        .then(function(article){
-            console.log(article);
-        })
-        .catch(function(err){
-            console.log(err);
-        })
+       let arrayOfPromises
+        
     });
 })();

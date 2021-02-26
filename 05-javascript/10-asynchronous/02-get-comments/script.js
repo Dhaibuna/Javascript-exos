@@ -15,10 +15,14 @@
     document.getElementById("run").addEventListener("click", () => {
         window.lib.getPosts((err, articles) => {
             articles.forEach(comment => {
-                window.lib.getComments(comment.id,((err, comments)=>{
-                    console.log(comments)
+                window.lib.getComments(comment.id, ((err, comments) => {
+                    //console.log(comments); Cette ligne seule ne va jamais rajouter les commentaires obtenus.
+                    comment.comments = comments;
+                    /* comments = [i] (faut imaginer) => Comme mon comment est un object, dans les variables comment, je lui
+                    demande de mettre le paramètre comments */
                 }));
             });
+            console.log(articles);
         });
     });
 })();
