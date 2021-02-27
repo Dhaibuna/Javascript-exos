@@ -11,4 +11,15 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        async function ultimatepromise() {
+            const postPromise = await window.lib.getPosts();
+            postPromise.forEach(article => {
+                window.lib.getComments()
+                article.comments = postPromise // Pour aller chercher rechercher la promesse 
+                console.log(postPromise)
+            });
+        }
+        ultimatepromise()
+    })
 })();
