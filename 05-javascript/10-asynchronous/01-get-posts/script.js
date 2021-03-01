@@ -17,3 +17,14 @@
         })
     } )
 })();
+
+
+
+/* Corrections 
+
+Callback = Quelque chose qu'on va appeler en retour. 
+Ici : " Vas chercher les posts, et renvoie les quand tu as fini"
+Privilégier les fonctions flèchées. 
+Window.lib.getPosts recoit un callback en fonction, qui recoit deux paramètres : Une erreur si c'est faut et un tableau d'article si c'est vrai 
+
+*/

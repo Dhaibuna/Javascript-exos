@@ -21,3 +21,9 @@
     });
 
 })();
+
+
+/*Corrections : 
+Nous permet d'utiliser des promesses de manière synchrone 
+Ca ne remplace pas les promesses, c'est juste un mot clé autour d'une promesse
+*/

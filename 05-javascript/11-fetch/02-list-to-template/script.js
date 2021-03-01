@@ -19,14 +19,13 @@
             .then(response => response.json()) // Je formate la réponse que je vais recevoir au format JSON
             .then(data => {
                 console.log(data);
-                data.forEach(({ name, alterEgo, powers }) => {
-                    let iteratedNode = heroesStructure.cloneNode(true);
+                data.forEach(({ name, alterEgo, abilities }) => {
+                    let iteratedNode = heroesStructure.cloneNode(true).content; // avec content, je prends le contenu de mon template, pas juste la balise 
                     iteratedNode.querySelector(".name").textContent = name;
                     iteratedNode.querySelector(".alter-ego").textContent = alterEgo;
-                    iteratedNode.querySelector(".powers").textContent = powers;
+                    iteratedNode.querySelector(".powers").textContent = abilities.join('/');
                     displayInTarget.appendChild(iteratedNode);
                 });
-                console.log(heroesStructure)
             });
 
     });

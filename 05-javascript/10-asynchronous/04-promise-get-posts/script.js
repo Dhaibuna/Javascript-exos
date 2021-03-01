@@ -28,3 +28,7 @@
 
     });
 })();
+
+/* Corrections 
+Les promises évitent le callback hell. C'est un objet spécifique qui peut avoir trois états : Pending - fulfilled /resolved-rejected. Ce sont les 3 valeurs qu'une promesse renvoit quand elle est appelée 
+*/

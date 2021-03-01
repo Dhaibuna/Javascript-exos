@@ -28,3 +28,8 @@
         intervals.push(setupIntervalMessage("five", 10000));
     });
 })();
+
+
+/* Corrections
+L'idée de cette série est d'aborder l'asynchrone avec les trois méthodes historiques. Les callbacks, les promises et async/await. Parfois on doit aussi / encore utiliser des callbacks
+*/

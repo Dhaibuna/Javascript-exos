@@ -38,3 +38,9 @@
             })
     });
 })();
+
+
+/* Correction 
+ promise.all = va appeler son then quand toutes les promesses auront été exécutées. Pour lui donner pleins de promesse, je vais utiliser un map qui prend un tableau et en retourne un nouveau. Mon tableau d'article est ainsi retourné en nouveau tableau de promesses.
+
+*/ 
